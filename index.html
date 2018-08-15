@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chess Position Absolute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .board {
+            position: absolute;
+            top: calc(50% - 25vh - 4px);
+            left: calc(50% - 25vh - 4px);
+            width: 50vh;
+            height: 50vh;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        
+        span {
+            position: absolute;
+            width: 25vh;
+            height: 25vh;
+        }
+        
+        span:nth-child(1) {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        
+        span:nth-child(2) {
+            top: 0;
+            left: 25vh;
+        }
+        
+        span:nth-child(3) {
+            top: 25vh;
+            left: 25vh;
+            background-color: red;
+        }
+        
+        span:nth-child(4) {
+            top: 25vh;
+        }
+        
+        h1 {
+            text-align: center;
+            position: relative;
+            top: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>chess "Position Absolute"</h1>
+</body>
+
+</html>
